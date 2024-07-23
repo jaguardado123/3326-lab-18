@@ -56,7 +56,7 @@ class Dog {
 ```java
 public class Main {
     public static void main(String[] args) {
-        // Accessing the random() method from class Math without a method.
+        // Accessing the random() method from class Math without an object.
         Math.random();
     }
 }
