@@ -66,7 +66,7 @@ public class Main {
 
 ### Student Manager
 
-Create a class `Student` with the following **public** attributes `name`, `email`, `school_id` and with method `studentInfo()` that prints out the name, email, and school_id of each student.
+Create a class `Student` with the following **public** attributes `name`, `email`, `school_id` and with **public** method `studentInfo()` that prints out the name, email, and school_id of each student.
 
 Since all students go to the same school, make the `school_id` **static**.
 
