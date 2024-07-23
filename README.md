@@ -14,15 +14,15 @@ Now let's begin!
 
 The static keyword is used for accessing methods and attributes from a class without an object, however its main purpose is for memory management.
 
-**Static variables** are initiated prior to being instanciated. This means static variables are allocated in memory prior to the creation of any objects.
+The static keyword must be added before the type of the attribute or method.
+
+**Static attributes (variables)** are initiated prior to being instanciated. This means static variables are allocated in memory prior to the creation of any objects.
 
 <img src="img/static.png" width="300px">
 
 Thus the same static variable is used throughout all instances (objects). If a static variable is updated in one objects, it gets updated for all the other objects.
 
 <img src="img/shared_mem.png" width="300px">
-
-The static keyword must be added before the type of the attribute or method.
 
 **Code Example:**
 
@@ -50,6 +50,17 @@ class Dog {
 ```
 
 **Static methods (functions)** are simply accessible outside the class without an object. This means any outside variables & methods called inside a static method must be static themselves, since they need to allocated and initialized prior.
+
+**Code Example:**
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Accessing the random() method from class Math without a method.
+        Math.random();
+    }
+}
+```
 
 ## Your Program
 
