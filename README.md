@@ -22,6 +22,8 @@ Thus the same static variable is used throughout all instances (objects). If a s
 
 <img src="img/shared_mem.png" width="300px">
 
+The static keyword must be added before the type of the attribute or method.
+
 **Code Example:**
 
 ```java
@@ -38,8 +40,8 @@ public class Owner {
 }
 
 class Dog {
-    String name;
-    static int age = 5; // same variable will be used for all objects.
+    public String name;
+    public static int age = 5; // same variable will be used for all objects.
 
     public void showAge() {
         System.out.println(age);
