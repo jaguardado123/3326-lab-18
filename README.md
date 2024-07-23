@@ -12,16 +12,20 @@ Now let's begin!
 
 ## Static
 
-**Revision:** The static keyword is used for accessing methods and attributes from a class without an object, however its main purpose is for memory management.
+The static keyword is used for accessing methods and attributes from a class without an object, however its main purpose is for memory management.
 
-Static variables are initiated prior to being instanciated. This means static variables are allocated in memory prior to the creation of any objects.
-ystem.out.println("Hello, World!");
+**Static variables** are initiated prior to being instanciated. This means static variables are allocated in memory prior to the creation of any objects.
+
 <img src="img/static.png" width="300px">
 
 Thus the same static variable is used throughout all instances (objects). If a static variable is updated in one objects, it gets updated for all the other objects.
 
+<img src="img/shared_mem.png" width="300px">
+
+**Code Example:**
+
 ```java
-public class Main {
+public class Owner {
     public static void main(String[] args) {
         // Object 1
         Dog dog1 = new Dog();
@@ -43,17 +47,29 @@ class Dog {
 }
 ```
 
-Static methods (functions) are simply accessible outside the class without an object, however any global variables used inside must be static as well, since non-static variables won't be initiated until an object is created.
+**Static methods (functions)** are simply accessible outside the class without an object. This means any outside variables & methods called inside a static method must be static themselves, since they need to allocated and initialized prior.
 
 ## Your Program
 
 ### Student Manager
 
-Create a class Student to with the following attributes `name`, `age`, `school_id` and with the method `studentInfo()` that prints out the name, age, and school_id of each student.
+Create a class `Student` with the following attributes `name`, `email`, `school_id` and with method `studentInfo()` that prints out the name, email, and school_id of each student.
 
-Since all students go to the same school, make the `school_id` static.
+Since all students go to the same school, make the `school_id` **static**.
 
-Now, see for yourself how **static** variables work. Create multiple student objects and see how updating the `school_id` for one objects affects all the other objects.
+Now, see for yourself how **static** variables work. <ins>Create 3 Student objects</ins> with a unique `name` and `email`, but same `school_id`. Next, see how updating the `school_id` for one objects affects all the other objects by printing their `studentInfo()` before and after updating the school_id for only one Student object.
+
+Your output should look like:
+
+```
+Student 1: Bob Bobbert, bob@uni.edu, 123
+Student 2: Carl Carlton, carl@uni.edu, 123
+Student 3: Jane Janeson, jane@uni.edu, 123
+
+Student 1: Bob Bobbert, bob@uni.edu, 456
+Student 2: Carl Carlton, carl@uni.edu, 456
+Student 3: Jane Janeson, jane@uni.edu, 456
+```
 
 ## Submit your assignment
 
