@@ -62,13 +62,13 @@ Now, see for yourself how **static** variables work. <ins>Create 3 Student objec
 Your output should look like:
 
 ```
-Student 1: Bob Bobbert, bob@uni.edu, 123
-Student 2: Carl Carlton, carl@uni.edu, 123
-Student 3: Jane Janeson, jane@uni.edu, 123
+Student Info: Bob Bobbert, bob@uni.edu, 123
+Student Info: Carl Carlton, carl@uni.edu, 123
+Student Info: Jane Janeson, jane@uni.edu, 123
 
-Student 1: Bob Bobbert, bob@uni.edu, 456
-Student 2: Carl Carlton, carl@uni.edu, 456
-Student 3: Jane Janeson, jane@uni.edu, 456
+Student Info: Bob Bobbert, bob@uni.edu, 456
+Student Info: Carl Carlton, carl@uni.edu, 456
+Student Info: Jane Janeson, jane@uni.edu, 456
 ```
 
 ## Submit your assignment
