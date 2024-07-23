@@ -6,4 +6,4 @@ public class School {
     }
 }
 
-// Write your Student class here
+// Write your Student class here or create new Student.java file

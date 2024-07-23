@@ -6,7 +6,7 @@ Unlike previous labs, your class has already been created for you.
 
 ## Let's get started!
 
-First, let's look at the name of our .java file in the src/ directory and name your class accordingly and remember to make it **public**. Next, **create your main() method inside your class**.
+For this lab your **main() method** is in the School class. You can create any new classes below the Shool class or inside a new java file. 
 
 Now let's begin!
 
