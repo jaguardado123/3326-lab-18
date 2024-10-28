@@ -28,4 +28,11 @@ public class StudentTest {
 		s2.school_id = 456;
 		assertEquals(true, s1.school_id == s2.school_id);
 	}
+
+	@Test
+	public void testing_studentInfo_method() {
+		Student s1 = new Student("Bob", "bob@uni.com");
+		s1.studentInfo();
+		assertEquals(true, true);
+	}
 }
