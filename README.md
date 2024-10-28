@@ -1,4 +1,4 @@
-# Lab Assignment 13
+# Lab Assignment 18
 
 In this lab you will practice working with static variables.
 
