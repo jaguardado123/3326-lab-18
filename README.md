@@ -66,11 +66,17 @@ public class Main {
 
 ### Student Manager
 
-Create a class `Student` with the following **public** attributes `name`, `email`, `school_id` and with **public** method `studentInfo()` that prints out the name, email, and school_id of each student.
+Create a class `Student` inside the `school` directory with the following **public** attributes `name` (String), `email` (String), and `school_id` (int) and create a **public** constructor to assign values to <ins>`name` and `email` ONLY</ins>.
+
+Next, create a **public** method `studentInfo()` that prints out the `name`, `email`, and `school_id`. 
 
 Since all students go to the same school, make the `school_id` **static**.
 
-Now, see for yourself how **static** variables work. <ins>Create 3 Student objects</ins> with a unique `name` and `email`, but same `school_id`. Next, see how updating the `school_id` for one objects affects all the other objects by printing their `studentInfo()` before and after updating the school_id for only one Student object.
+===
+
+Now, see for yourself how **static** variables work. Inside the `Main` class assign a value to `school_id` without creating an object.
+
+Next, <ins>create 3 Student objects</ins> with a unique `name` and `email`, and output their information using `studentInfo()`. Now, assign a new value to `school_id` and see how it affects all the objects by calling the `studentInfo()` method again for each object.
 
 Your output should look like:
 
