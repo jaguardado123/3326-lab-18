@@ -2,10 +2,12 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import school.Student;
+
 public class StudentTest {
 	
 	@Test
-	public void testing_sum_with_array1() {
+	public void testing_name_attribute() {
 		Student s1 = new Student();
 		Student s2 = new Student();
 		s1.name = "Bob";
@@ -14,7 +16,7 @@ public class StudentTest {
 	}
 
 	@Test
-	public void testing_sum_with_array2() {
+	public void testing_email_attribute() {
 		Student s1 = new Student();
 		Student s2 = new Student();
 		s1.email = "bob@uni.edu";
@@ -23,7 +25,7 @@ public class StudentTest {
 	}
 
 	@Test
-	public void testing_sum_with_array3() {
+	public void testing_school_id_attribute() {
 		Student s1 = new Student();
 		Student s2 = new Student();
 		s1.school_id = 123;
