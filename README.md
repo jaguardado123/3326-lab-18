@@ -29,23 +29,21 @@ Thus the same static variable is used throughout all instances (objects). If a s
 ```java
 public class Owner {
     public static void main(String[] args) {
+
         // Object 1
         Dog dog1 = new Dog();
         dog1.age = 7;
 
         // Object 2
         Dog dog2 = new Dog();
-        dog2.showAge(); // Will output 7, since age is static.
+        System.out.println( dog2.age ); // Will output 7, since age is static.
     }
 }
 
 class Dog {
+
     public String name;
     public static int age = 5; // same variable will be used for all objects.
-
-    public void showAge() {
-        System.out.println(age);
-    }
 }
 ```
 
@@ -68,17 +66,15 @@ public class Main {
 
 Create a class `Student` inside the `school` directory with the following **public** attributes `name` (String), `email` (String), and `school_id` (int) and create a **public** constructor to assign values to <ins>`name` and `email` ONLY</ins>.
 
-Next, create a **public** method `studentInfo()` that prints out the `name`, `email`, and `school_id`. 
-
 Since all students go to the same school, make the `school_id` **static**.
 
 ===
 
-Now, see for yourself how **static** variables work. Inside the `Main` class assign a value to `school_id` without creating an object.
+Now, see for yourself how **static** variables work. Inside the `Main` class assign a value to `school_id` without creating an object, but by simply referencing it from the class.
 
-Next, <ins>create 3 Student objects</ins> with a unique `name` and `email`, and output their information using `studentInfo()`. Now, assign a new value to `school_id` and see how it affects all the objects by calling the `studentInfo()` method again for each object.
+Next, <ins>create 3 Student objects</ins> with a unique `name` and `email`, and output their information. Now, assign a new value to the `school_id` of one object and see how it affects all the objects by printing out their `school_id`.
 
-Your output should look like:
+Your output may look like:
 
 ```
 Student Info: Bob Bobbert, bob@uni.edu, 123
